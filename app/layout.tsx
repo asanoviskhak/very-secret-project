@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Golos_Text } from 'next/font/google'
 import { Metadata } from 'next'
-const inter = Inter({ subsets: ['latin'] })
+const font = Golos_Text({ subsets: ['cyrillic-ext', 'latin'] })
 
 export const metadata: Metadata = {
   title: 'Iskhak\'s Blog',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   )
 }
