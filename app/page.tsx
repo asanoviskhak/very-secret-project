@@ -1,11 +1,11 @@
-import { combineClassnames } from '@/helpers/strings'
 import common from '../styles/common.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className={common.main}>
       <section className={common.section}>
-        <h1>Blog Page</h1>
+        <Link href='/posts' ><h1>All posts</h1></Link>
       </section>
       <section className={common.section}>
         <p>Blog content</p>
