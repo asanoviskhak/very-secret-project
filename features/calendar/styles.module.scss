@@ -1,0 +1,39 @@
+@import '../../styles/resetters.module.scss';
+
+.year-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -1rem;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.year_item {
+    @extend %button-reset;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #eee;
+        transform: scale(1.1);
+        box-shadow: 0 8px 0.8rem -8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__active {
+        background-color: #eee;
+        transform: scale(1.1);
+        box-shadow: 0 8px 0.8rem -8px rgba(0, 0, 0, 0.2);
+    }
+}
