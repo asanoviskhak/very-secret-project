@@ -1,7 +1,7 @@
 import './globals.css'
-import { Golos_Text } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import { Metadata } from 'next'
-const font = Golos_Text({ subsets: ['cyrillic-ext', 'latin'] })
+const font = Manrope({ subsets: ['cyrillic-ext', 'latin'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Iskhak\'s Blog',
