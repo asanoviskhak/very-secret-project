@@ -1,13 +1,15 @@
 @import '../../styles/resetters.module.scss';
 
-.year-list {
+.year_list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -1rem;
-    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     list-style: none;
     width: 100%;
+    gap: 2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 20px;
 }
 
 .year_item {
@@ -21,19 +23,21 @@
     height: 5em;
     padding: 0.5rem 0rem;
     text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 50%;
     transition: all 0.2s ease-in-out;
+    font-weight: 400 !important;
 
     &:hover {
-        background-color: #eee;
+        color: #eee;
         transform: scale(1.1);
-        box-shadow: 0 8px 0.8rem -8px rgba(0, 0, 0, 0.2);
     }
 
     &__active {
-        background-color: #eee;
+        color: #eee;
         transform: scale(1.1);
-        box-shadow: 0 8px 0.8rem -8px rgba(0, 0, 0, 0.2);
+    }
+    
+    &__inactive {
+        color: #aaa;
+        opacity: 0.5;
     }
 }

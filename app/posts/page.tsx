@@ -14,8 +14,12 @@ export default async function Posts() {
 
   return (
     <main className={stylesCommon.main}>
-      <h1>All posts</h1>
-      <Timeline posts={posts} />
+      <section className={stylesCommon.section}>
+        <h1>All posts</h1>
+      </section>
+      <section className={stylesCommon.section}>
+        <Timeline posts={posts} />
+      </section>
     </main>
   );
 }

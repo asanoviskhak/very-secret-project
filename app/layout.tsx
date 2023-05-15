@@ -1,7 +1,11 @@
 import './globals.css'
 import { Manrope } from 'next/font/google'
 import { Metadata } from 'next'
-const font = Manrope({ subsets: ['cyrillic-ext', 'latin'], display: 'swap' })
+const font = Manrope({
+  subsets: ['cyrillic-ext', 'latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800'],
+});
 
 export const metadata: Metadata = {
   title: 'Iskhak\'s Blog',
