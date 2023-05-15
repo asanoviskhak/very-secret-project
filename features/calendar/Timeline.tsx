@@ -80,11 +80,7 @@ const Timeline = ({ posts }: { posts: Post[] }) => {
         <button
           className={addModifier(styles.year_item, styles.year_item__inactive)}
           key={year}
-          // disabled
-          onClick={() => {
-            setSelectedYear(year);
-            // setSearchQuery(year);
-          }}
+          disabled
         >
           <h3>{year}</h3>
         </button>
